@@ -1,2 +1,2 @@
 # clonaciongoogle
-Proyecto de clonación de la interfaz de Google con HTML 5 y CSS 3
+Proyecto de clonación de la interfaz de Google con HTML5 y CSS3
