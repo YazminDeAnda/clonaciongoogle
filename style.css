@@ -1,0 +1,181 @@
+body{
+    margin:0;
+    padding:0;
+    font: size 13px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header{width:100%;
+    height:60px ;
+}
+
+header nav{
+    display:flex;
+    justify-content:flex-end;
+}
+
+a{ text-decoration:none ;
+    cursor:pointer;}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a{
+    margin-right: 25px;
+    color:black;
+}
+nav .nav-right-section img{
+    border-radius: 80px;
+    margin-left:15px;
+    width:35px;
+    height: 35px;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    width:27px;
+    height:27px;
+}
+
+main {margin-top: 80px;
+    text-align: center;
+
+}
+
+main .main-logo{
+    width: 530px;
+    margin-bottom: 35px;
+    margin: 0 auto;
+}
+main .main-logo img{
+    width: 330px;
+    height: 125px ;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+/*te estás refiriendo a un elemento con la clase de ese nombre largo*/
+main .main-input-conteiner{
+    width:525px;
+    border-radius: 100px;
+    border:1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border:none;
+    outline:none
+}
+
+/* cunado pasamos por el borde sale sombreado, 
+0 sombras laterales 1px es de la parte de arriba y el 6 es de abajo*/
+main .main-input-conteiner:hover{
+    box-shadow: 0 1px 6px 0 #dfe1e5;
+}
+
+/*se refiere a que dentro de la clase main-input existe un elemento con una clase llamada search-icon*/
+main .main-input .search-icon{
+    background-image:url(https://img.icons8.com/android/24/000000/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+}
+
+main .main-buttons{
+    width: 500px;
+    margin:0 auto;
+}
+/*separar (div) los botones en una misma linea*/
+main .main-buttons div{
+    display:inline-block;
+}
+
+/*edicion de los botones*/
+main .main-buttons button{
+    height: 36px;
+    background-color:#f8f9fa;
+    border:0;
+    /*tamaño de la letra y color*/
+    font-size:14 px
+    color:#f2f2f2;
+    /*redondear las esquinas de los botones*/
+    border-radius: 6px;
+    /*les da mas espacio a las letras*/
+    padding: 0 15px;
+    /*separar a la derecha los botones*/
+    margin-right: 12px;
+}
+
+/*hacer la sombra del boton*/
+main .main-buttons button:hover{
+    border: 1px solid #f2f2f2; 
+    box-shadow: 0 0.5px 1px 0 #000001;
+    color:#222;
+    /*cambiar cuando pase el cursor de flecha a mano*/
+    cursor:pointer;
+}
+
+/*editar todo el footer*/
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+/*editar las listas no ordenas*/
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+
+}
+/*editar el contenido de las listas derecha*/
+footer .footer-left {
+    justify-self: left;
+}
+
+footer .footer-right {
+    justify-self: right;
+}
+
+/*todo lo que este dentro de estas variantes*/
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
